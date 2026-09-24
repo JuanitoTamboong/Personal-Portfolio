@@ -30,14 +30,18 @@ export default function About() {
             <li>▹ Git & GitHub</li>
           </ul>
         </div>
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-500" />
-          <div className="relative bg-neutral-900 border border-white/10 rounded-lg p-6">
-            <div className="aspect-square bg-neutral-800 rounded-md flex items-center justify-center text-neutral-600">
-              <span className="text-sm">Your Photo Here</span>
-            </div>
-          </div>
-        </div>
+       <div className="relative group">
+  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-500" />
+  <div className="relative bg-neutral-900 border border-white/10 rounded-lg p-6">
+    <div className="aspect-square bg-neutral-800 rounded-md overflow-hidden">
+      <img
+        src="./public/images/pexil-me.jfif"
+        alt="Your Photo"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );
